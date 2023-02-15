@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        background: linear-gradient(to right, #2c5364, #081216);
+      }
+      .wrapper2 img {
+        height: 50%;
+        width: 50%;
+      }
+
+      img {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transition: 0.5s ease-out 100ms;
+        cursor: pointer;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+      h2 {
+        font-size: 50px;
+        font-weight: bold;
+        color: red;
+      }
+      h2:active {
+        color: rgba(255, 0, 0, 0.515);
+        transition: 0.1ms;
+      }
+      @media only screen and (max-width: 600px) {
+        /*Big smartphones [426px -> 600px]*/
+        h2 {
+          font-size: clamp(1.875rem, 0.3125rem + 5vw, 3.125rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent vh-100 w-100 -warning">
+      <div class="wrapper h-75 w-100 -warning d-flex justify-content-center">
+        <div
+          class="wrapper2 h-100 w-75 -success d-flex justify-content-center align-items-center"
+        >
+          <div
+            class="wrapper3 -warning w-100 h-100 d-flex justify-content-center align-items-center"
+          >
+            <img class="-warning" src="diamond.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="wrapper4-danger h-25 d-flex justify-content-center align-items-start"
+      >
+        <a href="index2.html" style="text-decoration: none"
+          ><h2>HAPPY VALENTINE'S DAY</h2></a
+        >
+      </div>
+    </div>
+  </body>
+</html>
